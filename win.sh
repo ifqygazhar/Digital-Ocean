@@ -17,4 +17,4 @@ IPv4=`echo ${iAddr} |cut -d'/' -f1`
 MASK=`netmask $(echo ${iAddr} |cut -d'/' -f2)`
 GATE=`ip route show default |grep "^default" |grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' |head -n1`
 printf "\n  %-20s" "`echo \"[*] Please wait until this server is reboot.. \"`"
-wget --no-check-certificate -qO- https://github.com/ifqygazhar/Digital-Ocean/raw/master/ints.sh | bash -s - -n $IPv4,$MASK,$GATE -t https://archive.org/download/ws2016-nKm.vhd/ws2016-nKm.vhd.gz -w r00tRhel@12 > /dev/null
+wget --no-check-certificate -qO- https://github.com/ifqygazhar/Digital-Ocean/raw/master/ints.sh | bash -s - -n $IPv4,$MASK,$GATE -t https://archive.org/download/ws2016-nKm.vhd/ws2016-nKm.vhd.gz -w ifqygazharserv12@ > /dev/null
