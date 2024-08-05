@@ -98,7 +98,7 @@ while true; do
 
     case "$PILIHOS" in
         1) PILIHOS="https://rizzcode.my.id/1:/W2012RizzNew.xz"  IFACE="Ethernet 3"  IFACEA="Ethernet 4"  OS="2012";;
-        2) PILIHOS="https://rizzcode.my.id/1:/W2016Rizz.xz"  IFACE="Ethernet Instance 0"  IFACEA="Ethernet Instance 0 2"  OS="2016";;
+        2) PILIHOS="http://drive.muavps.net/windows/Windows2016.gz"  IFACE="Ethernet Instance 0"  IFACEA="Ethernet Instance 0 2"  OS="2016";;
         3) PILIHOS="https://rizzcode.my.id/1:/W2019Rizz.xz"  IFACE="Ethernet Instance 0"  IFACEA="Ethernet Instance 0 2"  OS="2019";;
         4) PILIHOS="https://rizzcode.my.id/1:/W2022Rizz.xz"  IFACE="Ethernet Instance 0"  IFACEA="Ethernet Instance 0 2"  OS="2022";;
         5) PILIHOS="https://rizzcode.my.id/1:/W10RizzNew.xz"  IFACE="Ethernet Instance 0"  IFACEA="Ethernet Instance 0 2"  OS="10";;
