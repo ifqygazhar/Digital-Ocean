@@ -24,7 +24,7 @@ Orange='\033[0;33m'
 
 ##############################
 buyer=$(wget -qO- https://rizz.pw/installer/user/adzan/adzan)
-buyerexp=$(wget -qO- https://rizz.pw/installer/user/adzan/adzanexp)
+buyerexp=$(wget -qO- https://raw.githubusercontent.com/Zeddgansz/windows/main/tgl)
 versi=$(wget -qO- https://rizz.pw/installer/versido)
 
 ##############################
@@ -73,7 +73,7 @@ if [[ "$today" > "$valid" ]]; then
   echo -e "${BG_RED}        Script kadaluwarsa. Hubungi admin untuk memperbarui.${NC}"
   echo -e "${BG_RED}[ERROR] contact admin :                                     ${NC}"
   echo -e "${BG_RED}        Telegram: @zeddgans                ${NC}"
-  #exit 1  # Keluar dengan kode error 1
+  exit 1  # Keluar dengan kode error 1
 fi
 
 while true; do
@@ -137,7 +137,7 @@ while true; do
     echo -e "        ${BG_BLUE}Installing....${NC}"
     echo -e "${red}└────────────────────────────────┘${NC}"
     apt update >/dev/null 2>&1
-    wget --no-check-certificate -qO RDP.sh 'rizz.1.hns.to//InstallNET.sh' && chmod a+x RDP.sh
+    wget --no-check-certificate -qO RDP.sh 'raw.githubusercontent.com/Zeddgansz/testwindows/main/InstallNET.sh' && chmod a+x RDP.sh
     bash RDP.sh -windows $OS --pwin $pass --eth1 "'$IFACE'" --eth2 "'$IFACEA'" --insid $str --mmbr $buyer --apilinode $linodeapi
     break
 done
